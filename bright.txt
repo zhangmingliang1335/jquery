@@ -12,4 +12,24 @@ B.多态前提
 		b.要有方法重写
 		c.要有父类引用指向子类对象
 C.案例演示：
-		
+		class Demo_1{
+
+			public status void main(Strign[] args){
+				Father f = new Son() // 父类引用指向子类对象
+				f.num = 10 //为什么会等于10，运行规则是编译左边，输出也是看左边（成员变量）
+				f.print()  //输出 son  为什么会等于son，运行规则是编译右边，输出也是看右边（成员方法）  
+			
+}
+		}
+		class Father{
+			int num = 10 ;
+			public void print(){
+				system.out.println("father")
+			}
+		}
+		class Son Extends Father{
+			int num = 20
+			public void print(){
+				system.out.println("son")
+			}
+		}
