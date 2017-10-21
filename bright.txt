@@ -47,7 +47,10 @@ F: instance of :
 
 G:抽象类：
 	a.就是看不懂的类
-	b.用关键字 abstarct 修饰类 public abstarct void eat()修饰方法，没有打括号{ }
+	b.用关键字 abstarct 修饰类 public abstarct void eat()修饰方法，没有打括号及方法体{ }
 	c.不能实例化 ，可以使用父类引用指向子类对象,但是子类必须全部重写父类抽象方法，或者子类位抽象类
 	d.不能修饰成员变量,成员变量既可以是变量也可以是常量
 	e.成员方法既可以是抽象的，也可以是非抽象的（提高代码的复用性）
+	f.不能与static ，final 公用；
+		a.final修饰的方法不能被重写，而abstract修饰的方法必须重写
+		b.static修饰是类名可以直接调用，而抽象不行
